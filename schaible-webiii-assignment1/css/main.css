@@ -1,0 +1,210 @@
+
+/*--------------------------------------------------------------
+>>> CSS STANDARDS
+----------------------------------------------------------------
+1. Place in appropriate section
+2. Add new sections to the Table of Contents as needed
+3. Order properties consistently inside each declaration i.e. alphabetically or by function 
+4. Declaration selectors should each occupy a new line
+5. Enter one new line between rules
+6. Enter more than one new line between categories 
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+    - Forms
+    - Lists
+    - Media
+    - Tables
+    - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+    - Framework
+6.0 - Components: specific designed components
+    - Buttons
+    - Header
+    - Navigation 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+    - Alignment	    
+    - Color
+    - Size
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+4.0 - ELEMENTS 
+-------------------------------------------------------------- */
+
+/* -- FORMS -- */ 
+
+
+/*--------------------------------------------------------------
+4.0 - ELEMENTS 
+-------------------------------------------------------------- */
+
+/* -- TYPOGRAPHY -- */ 
+
+.quote, .hero-text {
+text-align: center;
+font-weight: 800;
+text-transform: uppercase;
+}
+
+.hero-text, header a, .quote p {
+color: rgb(255, 252, 230);
+}
+
+.hero-text{
+font-size: 4.5rem;
+}
+
+.quote {
+font-size: 3rem;
+background-color: #644D45;
+padding: 1.5rem 0 1.5rem;
+}
+
+.quote,.hero-text {
+    text-align:center;
+    font-weight:800;
+    text-transform:uppercase;
+    }
+
+/* -- MEDIA -- */ 
+
+.hero-image {
+    background-image: url("../img/header-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+    
+    
+    
+    
+.hero-image {
+    background-image:url(../img/header-image.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+    }
+
+
+/*--------------------------------------------------------------
+5.0 - OBJECTS 
+-------------------------------------------------------------- */
+
+body > main > section.hero-image > h1 {
+padding: 3em;
+}
+
+
+.card-container, .grid-container {
+padding-right: 6em;
+padding-left: 6em;
+}
+
+footer {
+background-color: black;
+}
+
+body > section.grid-container > div:nth-child(2) > div:nth-child(2) {
+padding-left: 8em;
+}
+
+section {
+padding: 2em 0 2em;
+}
+
+body > section.grid-container > div:nth-child(2) > div:nth-child(2) {
+padding-left:8em;
+}
+
+section {
+padding:2em 0;
+}
+
+.card-container,.grid-container {
+    padding-right:6em;
+    padding-left:6em;
+    }
+
+
+
+    body > main > section.hero-image > h1 {
+        padding:3em;
+        }
+
+/*--------------------------------------------------------------
+6.0 - COMPONENTS 
+-------------------------------------------------------------- */
+
+/* -- BUTTONS -- */ 
+
+
+.button {
+background-color: #644D45;
+}
+
+.button:hover {
+background-color: #DF9C71;
+}
+
+
+
+
+/*--------------------------------------------------------------
+7.0 - UTILITIES 
+-------------------------------------------------------------- */
+
+/* -- COLORS -- */ 
+
+#example-menu > div > ul, #example-menu, .title-bar {
+background-color: #72756C;
+}
+
+#example-menu > div > ul > li.is-dropdown-submenu-parent.opens-right {
+color: rgb(70, 68, 59);
+}
+
+header a:hover, #example-menu > div > ul > li.is-dropdown-submenu-parent.opens-right {
+color: gray;
+}
+
+footer {
+background-color:#000;
+}
+
+
+#example-menu > div > ul,#example-menu,.title-bar {
+    background-color:#72756C;
+    }
+    
+#example-menu > div > ul > li.is-dropdown-submenu-parent.opens-right {
+    color:#46443b;
+    }
+    
+header a:hover,#example-menu > div > ul > li.is-dropdown-submenu-parent.opens-right {
+    color:gray;
+    }
+    
+.button {
+    background-color:#644D45;
+    }
+    
+.button:hover {
+    background-color:#DF9C71;
+    }
+
+
+.hero-text,header a,.quote p {
+color:#fffce6;
+}
+
+
